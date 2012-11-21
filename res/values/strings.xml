@@ -558,5 +558,9 @@
 
     <!-- The overflow actionbar button -->
     <string name="overflow_button_cd">More options</string>
+    
+    <string name="shendu_disc_clock" > Disc Clock </string>
+    <string name="shendu_clock" > Clock </string>
+    <string name="shendu_flip_clock" > Flip Clock </string>
 
 </resources>

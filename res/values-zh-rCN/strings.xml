@@ -358,4 +358,8 @@
 
     <!-- The overflow actionbar button -->
     <string name="overflow_button_cd">更多选项</string>
+
+    <string name="shendu_clock" > 圆盘时钟 </string>
+    <string name="shendu_disc_clock" > 时钟 </string>
+    <string name="shendu_flip_clock" > 翻页时钟 </string>
 </resources>
