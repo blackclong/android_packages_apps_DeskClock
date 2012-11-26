@@ -42,7 +42,7 @@ import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TimePicker;
 import android.widget.Toast;
-
+import com.shendu.ringtone.SoundPreference;
 /**
  * Manages each alarm
  */
@@ -56,7 +56,7 @@ public class SetAlarm extends PreferenceActivity implements Preference.OnPrefere
     private EditText mLabel;
     private CheckBoxPreference mEnabledPref;
     private Preference mTimePref;
-    private AlarmPreference mAlarmPref;
+    private SoundPreference mAlarmPref;
     private CheckBoxPreference mVibratePref;
     private CheckBoxPreference mIncVolPref;
     private ProfilePreference mProfilePref;
@@ -88,7 +88,7 @@ public class SetAlarm extends PreferenceActivity implements Preference.OnPrefere
         mEnabledPref = (CheckBoxPreference) findPreference("enabled");
         mEnabledPref.setOnPreferenceChangeListener(this);
         mTimePref = findPreference("time");
-        mAlarmPref = (AlarmPreference) findPreference("alarm");
+        mAlarmPref = (SoundPreference) findPreference("alarm");
         mAlarmPref.setOnPreferenceChangeListener(this);
         mVibratePref = (CheckBoxPreference) findPreference("vibrate");
         mVibratePref.setOnPreferenceChangeListener(this);

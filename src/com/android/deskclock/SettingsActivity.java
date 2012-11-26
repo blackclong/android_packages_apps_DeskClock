@@ -30,7 +30,7 @@ import android.preference.PreferenceActivity;
 import android.preference.PreferenceScreen;
 import android.preference.RingtonePreference;
 import android.provider.Settings;
-
+import com.shendu.ringtone.SoundPreference;
 /**
  * Settings for the Alarm Clock.
  */
@@ -58,8 +58,8 @@ public class SettingsActivity extends PreferenceActivity
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.settings);
 
-        final AlarmPreference ringtone =
-                (AlarmPreference) findPreference(KEY_DEFAULT_RINGTONE);
+        final SoundPreference ringtone =
+                (SoundPreference) findPreference(KEY_DEFAULT_RINGTONE);
         Uri alert = RingtoneManager.getActualDefaultRingtoneUri(this,
                 RingtoneManager.TYPE_ALARM);
         if (alert != null) {

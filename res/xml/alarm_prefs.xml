@@ -26,6 +26,7 @@
         android:persistent="false"
         android:key="setRepeat"
         android:title="@string/alarm_repeat" />
+    <!-- 
     <com.android.deskclock.AlarmPreference
         android:key="alarm"
         android:title="@string/alert"
@@ -33,6 +34,15 @@
         android:persistent="false"
         android:showDefault="false"
         android:showSilent="true" />
+     -->
+      <com.shendu.ringtone.SoundPreference
+        android:key="alarm"
+        android:title="@string/alert"
+        android:ringtoneType="alarm"
+        android:persistent="false"
+        android:showDefault="false"
+        android:showSilent="true" />
+    
     <com.android.deskclock.ProfilePreference
         android:persistent="false"
         android:key="profile"
