@@ -560,7 +560,7 @@
     <string name="overflow_button_cd">More options</string>
     
     <string name="shendu_disc_clock" > Shendu Disc Clock </string>
-    <string name="shendu_clock" > Shendu Clock </string>
+    <string name="shendu_clock" > Shendu Digital Clock </string>
     <string name="shendu_flip_clock" > Shendu Flip Clock </string>
 
          <!-- add ringtone options -->
