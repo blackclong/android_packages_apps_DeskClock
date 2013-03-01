@@ -56,6 +56,8 @@ public class SoundPreference extends RingtonePreference  implements
                     Settings.System.RINGTONE);
             if(uriString!=null){
                 uri = Uri.parse(uriString);
+            }else{
+            	return;
             }
         }else{
             uri = mUri;
