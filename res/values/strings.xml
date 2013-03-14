@@ -562,6 +562,7 @@
     <string name="shendu_disc_clock" > Shendu Disc Clock </string>
     <string name="shendu_clock" > Shendu Digital Clock </string>
     <string name="shendu_flip_clock" > Shendu Flip Clock </string>
+    <string name="shendu_simple_clock" > Shendu Simple Clock </string>
 
          <!-- add ringtone options -->
      <string name="sound_ringtones">Ringtones</string>

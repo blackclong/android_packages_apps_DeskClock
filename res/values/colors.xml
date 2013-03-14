@@ -38,4 +38,9 @@
     <color name="negative_timer_clock">#ffec3737</color>
 
     <color name="cling_text">#ff33b5e5</color>
+    
+<!-- add for shendu simple clock widget -->
+    <color name="shendu_simple_clock_widget_color">#D4D4D4</color>
+    <color name="shendu_simple_clock_shadow_color">#7f000000</color>
+    
 </resources>

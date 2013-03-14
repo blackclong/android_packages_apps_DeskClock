@@ -130,6 +130,7 @@
             <meta-data android:name="android.appwidget.provider" android:resource="@xml/analog_appwidget" />
         </receiver>
        
+     <!-- do not used,remove by hhl   
         <receiver android:name="com.android.alarmclock.Shendu_Digital_Clock_Widget"  
                   android:icon="@drawable/shendu_clock"
                   android:label="@string/shendu_clock" >
@@ -140,7 +141,7 @@
                 android:name="android.appwidget.provider"
                 android:resource="@xml/shendu_digital_appwidget" />
         </receiver>
-        
+       -->  
          <receiver android:name="com.android.alarmclock.Shendu_Flip_Clock_Widget"  
                   android:icon="@drawable/shendu_flip_clock"
                   android:label="@string/shendu_flip_clock" >
@@ -151,6 +152,20 @@
                 android:name="android.appwidget.provider"
                 android:resource="@xml/shendu_flip_appwidget" />
         </receiver>
+        
+        <!-- add for simple clock widget -->
+        <receiver android:name="com.android.alarmclock.ShenduSimpleClockWidget"  
+                  android:icon="@drawable/shendu_simple_clock"
+                  android:label="@string/shendu_simple_clock" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/shendu_simple_appwidget" />
+        </receiver>
+        
+        <service android:name="com.android.alarmclock.ShenduSimpleClockService"></service>
 
         <activity android:name=".Screensaver"
             android:label="@string/app_label"

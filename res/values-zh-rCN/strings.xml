@@ -362,6 +362,7 @@
     <string name="shendu_clock" > 深度数字时钟 </string>
     <string name="shendu_disc_clock" > 深度圆盘时钟 </string>
     <string name="shendu_flip_clock" > 深度翻页时钟 </string>
+    <string name="shendu_simple_clock" > 深度简单时钟 </string>
     
      <!-- add ringtone options -->
      <string name="sound_ringtones">铃声</string>

@@ -118,5 +118,6 @@
     <string name="shendu_disc_clock" > 深度圓盤時鐘 </string>
     <string name="shendu_clock" > 深度數字時鐘 </string>
     <string name="shendu_flip_clock" > 深度翻頁時鐘 </string>
+    <string name="shendu_simple_clock" > 深度簡單時鐘 </string>
 
 </resources>
