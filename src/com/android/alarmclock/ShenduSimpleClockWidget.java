@@ -41,9 +41,6 @@ public class ShenduSimpleClockWidget extends AppWidgetProvider {
 	@Override
 	public void onUpdate(Context context, AppWidgetManager appWidgetManager,int[] appWidgetIds) {
 		super.onUpdate(context, appWidgetManager, appWidgetIds);
-		RemoteViews views = new RemoteViews(context.getPackageName(), R.layout.shendu_simple_appwidget_linear);
-		views.setOnClickPendingIntent(R.id.shendu_widget_simple_id,
-				PendingIntent.getActivity(context, 0,new Intent(context, AlarmClock.class), 0));
 		notidifyDataChange(context, appWidgetIds);
 		Intent serviceIntent = new Intent();
 		serviceIntent.setClass(context, ShenduSimpleClockService.class);
@@ -107,6 +104,8 @@ public class ShenduSimpleClockWidget extends AppWidgetProvider {
 	 */
 	private void pushUpdate(Context context, int[] appWidgetIds, RemoteViews views) {
         final AppWidgetManager appWidgetManager = AppWidgetManager.getInstance(context);
+		views.setOnClickPendingIntent(R.id.shendu_widget_simple_id,
+				PendingIntent.getActivity(context, 0,new Intent(context, AlarmClock.class), 0));
         if (appWidgetIds != null) {
         	appWidgetManager.updateAppWidget(appWidgetIds, views);
         } else {
